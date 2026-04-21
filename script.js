@@ -1,4 +1,5 @@
 // Official ARC Raiders Weapons with Direct Wiki Image Links
+// Updated ARC Raiders Loadout Logic with Local Image Paths
 const guns = [
     { name: "Ferro", rarity: "common", cost: 1, image: "./resources/gun-thumbnails/Ferro.png" },
     { name: "Stitcher", rarity: "common", cost: 1, image: "./resources/gun-thumbnails/Stitcher.png" },
@@ -16,8 +17,8 @@ const guns = [
     { name: "Jupiter", rarity: "legendary", cost: 4, image: "./resources/gun-thumbnails/Jupiter.png" }
 ];
 
-// Item categories use standard icons if specific ones are missing
-const augmentIcon = "https://arcraiders.wiki/images/thumb/7/7e/Icon_Augment.png/120px-Icon_Augment.png";
+// Assuming similar local paths for augments and shields
+const augmentIcon = "./resources/augment-thumbnails/Icon_Augment.png";
 
 const augments = [
     { name: "Tactical Mk.1", cost: 1, supports: ["Light", "Medium"], image: augmentIcon },
@@ -28,9 +29,9 @@ const augments = [
 ];
 
 const shields = [
-    { name: "Light Shield", cost: 1, image: "https://arcraiders.wiki/images/b/bc/Light_Shield.png" },
-    { name: "Medium Shield", cost: 2, image: "https://arcraiders.wiki/images/4/4c/Medium_Shield.png" },
-    { name: "Heavy Shield", cost: 3, image: "https://arcraiders.wiki/images/e/ef/Heavy_Shield.png" }
+    { name: "Light Shield", cost: 1, image: "./resources/shield-thumbnails/Light_Shield.png" },
+    { name: "Medium Shield", cost: 2, image: "./resources/shield-thumbnails/Medium_Shield.png" },
+    { name: "Heavy Shield", cost: 3, image: "./resources/shield-thumbnails/Heavy_Shield.png" }
 ];
 
 function random(arr) {
@@ -79,14 +80,14 @@ function hardcoreRun() {
 function displayLoadout(gun, augment, shield) {
     // Weapon Display
     const gunEl = document.getElementById("gun");
-    gunEl.innerHTML = `<img src="${gun.image}" class="item-img" onerror="this.src='https://via.placeholder.com/120x60?text=Gun'"> <br> ${gun.name} (${gun.rarity.toUpperCase()})`;
+    gunEl.innerHTML = `<img src="${gun.image}" class="item-img" onerror="console.error('Failed to load image:', '${gun.image}')"> <br> ${gun.name} (${gun.rarity.toUpperCase()})`;
     gunEl.className = `rarity-${gun.rarity}`;
 
     // Augment Display
-    document.getElementById("augment").innerHTML = `<img src="${augment.image}" class="item-img"> <br> ${augment.name}`;
+    document.getElementById("augment").innerHTML = `<img src="${augment.image}" class="item-img" onerror="console.error('Failed to load image:', '${augment.image}')"> <br> ${augment.name}`;
     
     // Shield Display
-    document.getElementById("shield").innerHTML = `<img src="${shield.image}" class="item-img"> <br> ${shield.name}`;
+    document.getElementById("shield").innerHTML = `<img src="${shield.image}" class="item-img" onerror="console.error('Failed to load image:', '${shield.image}')"> <br> ${shield.name}`;
     
     updateShareLink(gun, augment, shield);
 }
@@ -105,9 +106,15 @@ function copyShareLink() {
 window.onload = function() {
     const params = new URLSearchParams(window.location.search);
     if (params.get("gun")) {
-        // Simple logic to find and display items from URL if needed
-        document.getElementById("gun").innerText = params.get("gun");
-        document.getElementById("augment").innerText = params.get("augment");
-        document.getElementById("shield").innerText = params.get("shield");
+        const gunName = params.get("gun");
+        const augName = params.get("augment");
+        const shldName = params.get("shield");
+        
+        // Find actual objects to get images
+        const gun = guns.find(g => g.name === gunName) || {name: gunName, image: "", rarity: "common"};
+        const aug = augments.find(a => a.name === augName) || {name: augName, image: ""};
+        const shld = shields.find(s => s.name === shldName) || {name: shldName, image: ""};
+        
+        displayLoadout(gun, aug, shld);
     }
 };
