@@ -1,19 +1,19 @@
 // Official ARC Raiders Weapons with Direct Wiki Image Links
 const guns = [
-    { name: "Ferro", rarity: "common", cost: 1, image: "https://arcraiders.wiki/images/6/69/Ferro-Level1.png" },
-    { name: "Stitcher", rarity: "common", cost: 1, image: "https://arcraiders.wiki/images/4/4b/Stitcher-Level1.png" },
-    { name: "Anvil", rarity: "uncommon", cost: 1, image: "https://arcraiders.wiki/images/0/05/Anvil-Level1.png" },
-    { name: "Il Toro", rarity: "uncommon", cost: 2, image: "https://arcraiders.wiki/images/e/e0/Il_Toro-Level1.png" },
-    { name: "Renegade", rarity: "rare", cost: 2, image: "https://arcraiders.wiki/w/images/thumb/b/b5/Renegade-Level1.png/348px-Renegade-Level1.png.webp" },
-    { name: "Canto", rarity: "rare", cost: 2, image: "https://arcraiders.images/9/9f/Canto-Level1.png" },
-    { name: "Venator", rarity: "rare", cost: 2, image: "https://arcraiders.wiki/images/3/3a/Venator-Level1.png" },
-    { name: "Torrente", rarity: "rare", cost: 2, image: "https://arcraiders.wiki/images/3/30/Torrente-Level1.png" },
-    { name: "Vulcano", rarity: "epic", cost: 3, image: "https://arcraiders.wiki/images/3/32/Vulcano-Level1.png" },
-    { name: "Tempest", rarity: "epic", cost: 3, image: "https://arcraiders.wiki/images/d/df/Tempest-Level1.png" },
-    { name: "Hullcracker", rarity: "epic", cost: 3, image: "https://arcraiders.wiki/images/a/a9/Hullcracker-Level1.png" },
-    { name: "Dolabra", rarity: "legendary", cost: 4, image: "https://arcraiders.wiki/images/3/30/Dolabra-Level1.png" },
-    { name: "Equalizer", rarity: "legendary", cost: 4, image: "https://arcraiders.wiki/images/d/d4/Equalizer.png" },
-    { name: "Jupiter", rarity: "legendary", cost: 4, image: "https://arcraiders.wiki/images/6/61/Jupiter.png" }
+    { name: "Ferro", rarity: "common", cost: 1, image: "./resources/gun-thumbnails/Ferro.png" },
+    { name: "Stitcher", rarity: "common", cost: 1, image: "./resources/gun-thumbnails/Stitcher.png" },
+    { name: "Anvil", rarity: "uncommon", cost: 1, image: "./resources/gun-thumbnails/Anvil.png" },
+    { name: "Il Toro", rarity: "uncommon", cost: 2, image: "./resources/gun-thumbnails/Il_Toro.png" },
+    { name: "Renegade", rarity: "rare", cost: 2, image: "./resources/gun-thumbnails/Renegade.png" },
+    { name: "Canto", rarity: "rare", cost: 2, image: "./resources/gun-thumbnails/Canto.png" },
+    { name: "Venator", rarity: "rare", cost: 2, image: "./resources/gun-thumbnails/Venator.png" },
+    { name: "Torrente", rarity: "rare", cost: 2, image: "./resources/gun-thumbnails/Torrente.png" },
+    { name: "Vulcano", rarity: "epic", cost: 3, image: "./resources/gun-thumbnails/Vulcano.png" },
+    { name: "Tempest", rarity: "epic", cost: 3, image: "./resources/gun-thumbnails/Tempest.png" },
+    { name: "Hullcracker", rarity: "epic", cost: 3, image: "./resources/gun-thumbnails/Hullcracker.png" },
+    { name: "Dolabra", rarity: "legendary", cost: 4, image: "./resources/gun-thumbnails/Dolabra.png" },
+    { name: "Equalizer", rarity: "legendary", cost: 4, image: "./resources/gun-thumbnails/Equalizer.png" },
+    { name: "Jupiter", rarity: "legendary", cost: 4, image: "./resources/gun-thumbnails/Jupiter.png" }
 ];
 
 // Item categories use standard icons if specific ones are missing
