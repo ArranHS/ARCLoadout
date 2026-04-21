@@ -4,7 +4,7 @@ const guns = [
     { name: "Stitcher", rarity: "common", cost: 1, image: "https://arcraiders.wiki/images/4/4b/Stitcher-Level1.png" },
     { name: "Anvil", rarity: "uncommon", cost: 1, image: "https://arcraiders.wiki/images/0/05/Anvil-Level1.png" },
     { name: "Il Toro", rarity: "uncommon", cost: 2, image: "https://arcraiders.wiki/images/e/e0/Il_Toro-Level1.png" },
-    { name: "Renegade", rarity: "rare", cost: 2, image: "https://arcraiders.wiki/images/1/14/Renegade-Level1.png" },
+    { name: "Renegade", rarity: "rare", cost: 2, image: "https://arcraiders.wiki/w/images/thumb/b/b5/Renegade-Level1.png/348px-Renegade-Level1.png.webp" },
     { name: "Canto", rarity: "rare", cost: 2, image: "https://arcraiders.images/9/9f/Canto-Level1.png" },
     { name: "Venator", rarity: "rare", cost: 2, image: "https://arcraiders.wiki/images/3/3a/Venator-Level1.png" },
     { name: "Torrente", rarity: "rare", cost: 2, image: "https://arcraiders.wiki/images/3/30/Torrente-Level1.png" },
