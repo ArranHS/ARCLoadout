@@ -6,21 +6,21 @@ const guns = [
     { name: "Kettle", rarity: "common", cost: 1, image: "./resources/gun-thumbnails/Kettle.png" },
     { name: "Rattler", rarity: "common", cost: 1, image: "./resources/gun-thumbnails/Rattler.png" },
     { name: "Hairpin", rarity: "common", cost: 1, image: "./resources/gun-thumbnails/Hairpin.png" },
-    { name: "Anvil", rarity: "uncommon", cost: 1, image: "./resources/gun-thumbnails/Anvil.png" },
+    { name: "Anvil", rarity: "uncommon", cost: 2, image: "./resources/gun-thumbnails/Anvil.png" },
     { name: "Il Toro", rarity: "uncommon", cost: 2, image: "./resources/gun-thumbnails/Il_Toro.png" },
     { name: "Arpeggio", rarity: "uncommon", cost: 2, image: "./resources/gun-thumbnails/Arpeggio.png" },
     { name: "Burletta", rarity: "rare", cost: 2, image: "./resources/gun-thumbnails/Burletta.png" },
-    { name: "Renegade", rarity: "rare", cost: 2, image: "./resources/gun-thumbnails/Renegade.png" },
-    { name: "Canto", rarity: "rare", cost: 2, image: "./resources/gun-thumbnails/Canto.png" },
-    { name: "Venator", rarity: "rare", cost: 2, image: "./resources/gun-thumbnails/Venator.png" },
-    { name: "Torrente", rarity: "rare", cost: 2, image: "./resources/gun-thumbnails/Torrente.png" },
-    { name: "Osprey", rarity: "rare", cost: 2, image: "./resources/gun-thumbnails/Osprey.png" },
-    { name: "Vulcano", rarity: "epic", cost: 3, image: "./resources/gun-thumbnails/Vulcano.png" },
-    { name: "Tempest", rarity: "epic", cost: 3, image: "./resources/gun-thumbnails/Tempest.png" },
-    { name: "Hullcracker", rarity: "epic", cost: 3, image: "./resources/gun-thumbnails/Hullcracker.png" },
-    { name: "Dolabra", rarity: "legendary", cost: 4, image: "./resources/gun-thumbnails/Dolabra.png" },
-    { name: "Equalizer", rarity: "legendary", cost: 4, image: "./resources/gun-thumbnails/Equalizer.png" },
-    { name: "Jupiter", rarity: "legendary", cost: 4, image: "./resources/gun-thumbnails/Jupiter.png" }
+    { name: "Renegade", rarity: "rare", cost: 3, image: "./resources/gun-thumbnails/Renegade.png" },
+    { name: "Canto", rarity: "rare", cost: 3, image: "./resources/gun-thumbnails/Canto.png" },
+    { name: "Venator", rarity: "rare", cost: 3, image: "./resources/gun-thumbnails/Venator.png" },
+    { name: "Torrente", rarity: "rare", cost: 3, image: "./resources/gun-thumbnails/Torrente.png" },
+    { name: "Osprey", rarity: "rare", cost: 3, image: "./resources/gun-thumbnails/Osprey.png" },
+    { name: "Vulcano", rarity: "epic", cost: 4, image: "./resources/gun-thumbnails/Vulcano.png" },
+    { name: "Tempest", rarity: "epic", cost: 4, image: "./resources/gun-thumbnails/Tempest.png" },
+    { name: "Hullcracker", rarity: "epic", cost: 4, image: "./resources/gun-thumbnails/Hullcracker.png" },
+    { name: "Dolabra", rarity: "legendary", cost: 5, image: "./resources/gun-thumbnails/Dolabra.png" },
+    { name: "Equalizer", rarity: "legendary", cost: 5, image: "./resources/gun-thumbnails/Equalizer.png" },
+    { name: "Jupiter", rarity: "legendary", cost: 5, image: "./resources/gun-thumbnails/Jupiter.png" }
 ];
 
 // Assuming similar local paths for augments and shields
