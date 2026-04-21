@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARC Raiders Loadout Terminal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="radar"></div>
+
+<div class="container">
+    <h1>ARC LOADOUT TERMINAL</h1>
+
+    <div class="panel">
+        <h3>Weapon Rarity Filter</h3>
+        <label><input type="checkbox" value="common" checked> Common</label>
+        <label><input type="checkbox" value="uncommon" checked> Uncommon</label>
+        <label><input type="checkbox" value="rare" checked> Rare</label>
+        <label><input type="checkbox" value="epic" checked> Epic</label>
+        <label><input type="checkbox" value="legendary" checked> Legendary</label>
+
+        <h3>Inventory Cost Limit</h3>
+        <input id="costLimit" type="number" placeholder="Max" min="3" max="11">
+    </div>
+
+    <div class="buttons">
+        <button onclick="generateLoadout()">Generate Loadout</button>
+        <button onclick="hardcoreRun()" style="background: #ff3e3e;">Hardcore Run ☠️</button>
+    </div>
+
+    <div class="result">
+        <div class="item">
+            <span class="icon">🔫</span>
+            <span id="gun">---</span>
+        </div>
+
+        <div class="item">
+            <span class="icon">⚙️</span>
+            <span id="augment">---</span>
+        </div>
+
+        <div class="item">
+            <span class="icon">🛡️</span>
+            <span id="shield">---</span>
+        </div>
+    </div>
+
+    <div style="margin-top: 30px;">
+        <button onclick="copyShareLink()" style="background: #444; color: #fff; font-size: 12px;">Copy Share Link 🔗</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

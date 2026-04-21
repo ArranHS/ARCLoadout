@@ -1,0 +1,222 @@
+/* Core Styling & Colors (ARC Raiders Aesthetic) */
+body {
+    background: #060606; /* Solid, dark black */
+    color: #e6e6e6; /* Bright off-white for text */
+    font-family: 'Orbitron', 'Chakra Petch', 'Arial', sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* ARC Signature Rainbow Streak (Vertical, Left-Side) */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    /* Red, Orange, Yellow, Green, Blue, Purple gradients as seen in image_0.png */
+    background: 
+        linear-gradient(175deg, transparent 33%, #FF0000 33.1%, #FF0000 44%, transparent 44.1%),
+        linear-gradient(175deg, transparent 44%, #FF7A18 44.1%, #FF7A18 55%, transparent 55.1%),
+        linear-gradient(175deg, transparent 55%, #FFFF00 55.1%, #FFFF00 66%, transparent 66.1%),
+        linear-gradient(175deg, transparent 66%, #00FF00 66.1%, #00FF00 77%, transparent 77.1%),
+        linear-gradient(175deg, transparent 77%, #0000FF 77.1%, #0000FF 88%, transparent 88.1%),
+        linear-gradient(175deg, transparent 88%, #800080 88.1%, #800080 99%, transparent 99.1%);
+    opacity: 0.15; /* Subtle branding, not overpowering */
+    z-index: -2;
+}
+
+/* Data-Grid Background (Simulates Map/UI Grid) */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px; /* Size of the grid cells */
+    z-index: -1;
+}
+
+h1 {
+    color: #FFB800; /* Speranza Gold for primary heading */
+    letter-spacing: 5px; /* Wide, precise lettering */
+    margin-bottom: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px rgba(255, 184, 0, 0.5); /* Soft, stable glow */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 100px auto 0 auto;
+    padding: 0 40px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Panel Design (Clean, Angular, and Tactical) */
+.panel {
+    background: rgba(10, 10, 10, 0.9);
+    padding: 30px;
+    border: 1px solid rgba(255, 184, 0, 0.2); /* Low-opacity gold border */
+    display: inline-block;
+    border-radius: 4px; /* Slight rounding, not overly soft */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    text-align: left; /* Filters aligned to left for better scanability */
+}
+
+.panel h3 {
+    border-bottom: 2px solid #FFB800; /* Solid gold section divider */
+    padding-bottom: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #e6e6e6; /* White text on gold line */
+    margin-top: 0;
+}
+
+.panel label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-family: sans-serif; /* Simplified for reading fine details */
+    color: rgba(230, 230, 230, 0.8);
+}
+
+.panel label:hover {
+    color: #FFB800; /* Highlight filter on hover */
+    cursor: pointer;
+}
+
+.panel input[type="checkbox"] {
+    margin-right: 12px;
+    accent-color: #FFB800; /* Gold checkboxes */
+}
+
+.item-img {
+    width: 120px; /* Adjust based on preference */
+    height: auto;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 5px rgba(255, 184, 0, 0.3)); /* Slight gold glow for items */
+    transition: transform 0.3s ease;
+}
+
+.item:hover .item-img {
+    transform: scale(1.1); /* Subtle zoom effect when hovering over the card */
+}
+
+/* Ensure the result cards have enough vertical space for images */
+.item {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    margin-top: 40px;
+}
+
+button {
+    padding: 16px 36px;
+    margin: 15px;
+    background: #FFB800; /* Primary button is solid gold */
+    color: #000; /* Black text on gold, consistent with "BUY NOW" in image_0.png */
+    border: none;
+    border-radius: 2px; /* Very angular */
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+button:hover {
+    background: #FFD561; /* Brighter gold on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 184, 0, 0.4);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Result Section Design */
+.result {
+    margin-top: 60px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.item {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05); /* Very subtle card effect */
+    border: 1px solid rgba(255, 184, 0, 0.1); /* Subtle, faint border */
+    border-radius: 4px;
+    min-width: 320px;
+    flex: 1 1 320px;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+.item:hover {
+    background: rgba(255, 184, 0, 0.05); /* Faint gold tint on hover */
+    border-color: rgba(255, 184, 0, 0.3);
+}
+
+.icon {
+    font-size: 32px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* Rarity Color Coding (Using stabilized colors) */
+.rarity-common { color: #b0b0b0; }
+.rarity-uncommon { color: #2EE52E; }
+.rarity-rare { color: #32AFFF; }
+.rarity-epic { color: #A54BFF; }
+.rarity-legendary { color: #FFD561; text-shadow: 0 0 12px rgba(255, 213, 97, 0.6); }
+
+/* Cost Input Styling */
+input[type="number"] {
+    background: #1a1a1a;
+    border: 1px solid rgba(255, 184, 0, 0.3);
+    color: #FFB800;
+    padding: 12px;
+    border-radius: 4px;
+    width: 100px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input[type="number"]::placeholder {
+    color: rgba(255, 184, 0, 0.4);
+}
+
+/* Minimal "Copy Link" Styling */
+div[style*="margin-top: 30px;"] button {
+    background: transparent;
+    border: 1px solid #FFB800;
+    color: #FFB800;
+    padding: 10px 20px;
+    font-size: 12px;
+}
+
+div[style*="margin-top: 30px;"] button:hover {
+    background: rgba(255, 184, 0, 0.1);
+    box-shadow: none;
+}
