@@ -25,20 +25,20 @@ const guns = [
 
 
 const augments = [
-    { name: "Tactical Mk.1", cost: 1, supports: ["Light", "Medium"], image: "./resources/augment-thumbnails/Tactical_Mk_1.png" },
-    { name: "Tactical Mk.2", cost: 2, supports: ["Light", "Medium", "Heavy"], image: "./resources/augment-thumbnails/Tactical_Mk_2.png" },
-    { name: "Tactical Mk.3 (Defensive)", cost: 3, supports: ["Light", "Medium", "Heavy"], image: "./resources/augment-thumbnails/Tactical_Mk_3_(Defensive).png" },
-    { name: "Tactical Mk.3 (Healing)", cost: 3, supports: ["Light", "Medium", "Heavy"], image: "./resources/augment-thumbnails/Tactical_Mk_3_(Healing).png" },
-    { name: "Tactical Mk.3 (Revival)", cost: 3, supports: ["Light", "Medium", "Heavy"], image: "./resources/augment-thumbnails/Tactical_Mk_3_(Revival).png" },
-    { name: "Looting Mk.1", cost: 1, supports: ["Light"], image: "./resources/augment-thumbnails/Looting_Mk_1.png" },
-    { name: "Looting Mk.2", cost: 2, supports: ["Light"], image: "./resources/augment-thumbnails/Looting_Mk_2.png" },
-    { name: "Looting Mk.3 (Survivor)", cost: 3, supports: ["Light", "Medium"], image: "./resources/augment-thumbnails/Looting_Mk_3_(Survivor).png" },
-    { name: "Looting Mk.3 (Cautious)", cost: 3, supports: ["Light", "Medium"], image: "./resources/augment-thumbnails/Looting_Mk_3_(Cautious).png" },
-    { name: "Looting Mk.3 (Safekeeper)", cost: 3, supports: ["Light", "Medium"], image: "./resources/augment-thumbnails/Looting_Mk_3_(Safekeeper).png" },
-    { name: "Combat Mk.1", cost: 1, supports: ["Light", "Medium", "Heavy"], image: "./resources/augment-thumbnails/Combat_Mk_1.png" },
-    { name: "Combat Mk.2", cost: 2, supports: ["Light", "Medium", "Heavy"], image: "./resources/augment-thumbnails/Combat_Mk_2.png" },
-    { name: "Combat Mk.3 (Flanking)", cost: 3, supports: ["Light", "Medium", "Heavy"], image: "./resources/augment-thumbnails/Combat_Mk_3_(Flanking).png" },
-    { name: "Combat Mk.3 (Aggressive)", cost: 3, supports: ["Light", "Medium", "Heavy"], image: "./resources/augment-thumbnails/Combat_Mk_3_(Aggressive).png" }
+    { name: "Tactical Mk.1", cost: 1, supports: ["Light", "Medium"], image: "./resources/augment-thumbnails/Tactical_Mk._1.png" },
+    { name: "Tactical Mk.2", cost: 2, supports: ["Light", "Medium", "Heavy"], image: "./resources/augment-thumbnails/Tactical_Mk._2.png" },
+    { name: "Tactical Mk.3 (Defensive)", cost: 3, supports: ["Light", "Medium", "Heavy"], image: "./resources/augment-thumbnails/Tactical_Mk._3_(Defensive).png" },
+    { name: "Tactical Mk.3 (Healing)", cost: 3, supports: ["Light", "Medium", "Heavy"], image: "./resources/augment-thumbnails/Tactical_Mk._3_(Healing).png" },
+    { name: "Tactical Mk.3 (Revival)", cost: 3, supports: ["Light", "Medium", "Heavy"], image: "./resources/augment-thumbnails/Tactical_Mk._3_(Revival).png" },
+    { name: "Looting Mk.1", cost: 1, supports: ["Light"], image: "./resources/augment-thumbnails/Looting_Mk._1.png" },
+    { name: "Looting Mk.2", cost: 2, supports: ["Light"], image: "./resources/augment-thumbnails/Looting_Mk._2.png" },
+    { name: "Looting Mk.3 (Survivor)", cost: 3, supports: ["Light", "Medium"], image: "./resources/augment-thumbnails/Looting_Mk._3_(Survivor).png" },
+    { name: "Looting Mk.3 (Cautious)", cost: 3, supports: ["Light", "Medium"], image: "./resources/augment-thumbnails/Looting_Mk._3_(Cautious).png" },
+    { name: "Looting Mk.3 (Safekeeper)", cost: 3, supports: ["Light", "Medium"], image: "./resources/augment-thumbnails/Looting_Mk._3_(Safekeeper).png" },
+    { name: "Combat Mk.1", cost: 1, supports: ["Light", "Medium", "Heavy"], image: "./resources/augment-thumbnails/Combat_Mk._1.png" },
+    { name: "Combat Mk.2", cost: 2, supports: ["Light", "Medium", "Heavy"], image: "./resources/augment-thumbnails/Combat_Mk._2.png" },
+    { name: "Combat Mk.3 (Flanking)", cost: 3, supports: ["Light", "Medium", "Heavy"], image: "./resources/augment-thumbnails/Combat_Mk._3_(Flanking).png" },
+    { name: "Combat Mk.3 (Aggressive)", cost: 3, supports: ["Light", "Medium", "Heavy"], image: "./resources/augment-thumbnails/Combat_Mk._3_(Aggressive).png" }
 ];
 
 const shields = [
